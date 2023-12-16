@@ -1,0 +1,149 @@
+/* creating background image */
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body {
+    background-image: url(./assets/spider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+  }
+  /*styling start game button  */
+  .start_game {
+    width: 100%;
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55%;
+    margin-left: 700px;
+    margin-bottom: -10px;
+  }
+  /* styling button */
+  .button {
+    padding: 10px 60px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 27px;
+    font-weight: 500;
+    border-radius: -10px;
+    background-color: rgb(177, 47, 47);
+    border-radius: 20px;
+    margin-top: 460px;
+    margin-left: 615px;
+  }
+  
+  .instructions{
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: gray;
+    color: rgb(253, 252, 252);
+    width: 350px;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  
+  .heading{
+   margin-left: 100px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px;
+  }
+  
+  p{
+    margin-top: 7px;
+    
+  }
+  /* styling start popup */
+  .start_popup {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    color: #333;
+    visibility: hidden;
+    transform: transform 0.4s, top 0.4s;
+  }
+  
+  /* styling popup */
+  .open-popup {
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* styling input (name) */
+  .name {
+    margin-left: 20%;
+    width: 240px;
+    height: 30px;
+    background-color: #333;
+    margin-top: 35px;
+    margin-left: 0px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  /* styling input (nick name) */
+  .nick_name {
+    margin-left: 20%;
+    width: 240px;
+    height: 30px;
+    background-color: #333;
+    margin-top: 20px;
+    margin-left: 0px;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  /* styling start button */
+  .Start {
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 45px;
+    color: rgb(1, 3, 3);
+    background-color: rgb(32, 167, 63);
+    border-radius: 10px;
+  }
+  .in_start_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* styling the close button */
+  .Close{
+      width: 70%;
+      height: 40px;
+      margin-top: 20px;
+      margin-left: 45px;
+      color: rgb(1, 3, 3);
+      background-color: rgb(165, 33, 33);
+      border-radius: 10px;
+  }
+  @media only screen and (max-width: 425px) {
+    body{
+      width: 100%;
+      background-image: url('assets/spider.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+    .button{
+      margin-right: 250px;
+    }
+  }

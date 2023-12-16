@@ -1,0 +1,50 @@
+/* giving backgriund image and cursor image */
+body{
+  background-image: url(./assets/loss.png);
+  cursor: url(https://cdn.custom-cursor.com/db/15365/32/origami-spider-pointer.png),
+    default !important;
+}
+/* creating a box for the deatils */
+.gameover-bg{
+    width: 50%;
+    height: 60vh;
+    background-color: rgb(145, 145, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+    margin-left: 350px;
+    margin-bottom: -10px;
+    border-radius: 10px;
+    border: 20px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+/* styling for the sentence */
+h2{
+    font-size: 40px;
+    color: rgb(83, 28, 141);
+    margin-bottom: 145px; 
+    margin-top: 140px;  
+}
+/* creating play again button */
+.flex-centered{
+    width: 155px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(217, 64, 37);
+    margin-bottom: 140px;
+    margin-left: 120px;
+}
+/* adjusting image between sentence and play again button */
+.spider_img{
+    justify-content: center;
+    align-items: center;
+    margin-left: 65px;
+    margin-top: -120px;
+}
+.tag {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

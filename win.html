@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>win</title>
+    <link rel="stylesheet" href="win.css">
+</head>
+<body>
+    <!-- creating a body for win.html -->
+    <div class="win-bg" align="center">
+        <div id="names">
+        <div class="first_div">
+            <!-- creating a score board -->
+            <h1 class="score_board"><b>score: <span class="number"></span></b></h1>
+            <!-- craeting a message to users-->
+            <h2>Awesome, you survived from bugs</h2>
+        </div>
+        <div class="second_div">
+        <!-- cerating an image -->
+        <div class="spider_img"><img src="./assets/black-spider-clipart-arachnia-illustration-of-black-spider-free-vector-removebg-preview.png" width="250px"
+            alt=""></div>   
+        <!-- craeting an playing button -->
+        <button class="flex-centered" id="play_again">Play Again</button>
+        </div>
+        </div>
+    </div>
+    <script>
+    // setting score in local storage //
+    let button=document.getElementById("play_again")
+    const score = document.querySelector(".number");
+    score.innerHTML = localStorage.getItem("score")
+    button.addEventListener('click',()=>{
+        window.location.href='./game.html'
+    })
+    let bgmSound = new Audio('./assets/sound.mp3');
+    bgmSound.play();
+    bgmSound.loop = true;
+    bgmSound.volume = 1;
+    </script>
+</body>
+
+</html>

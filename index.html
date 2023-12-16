@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spideee</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- instructions -->
+    <div class="instructions">
+      <div class="heading">Instructions</div>
+      <p>1. The player will be having "4" lives.</p>
+      <p>2. Each life will be reduced if player miss the shoot.</p>
+      <p>3. Player should survive for 60 seconds to win the game.</p>
+    </div>
+    <!-- creating an game page -->
+    <div class="start_
+    game">
+      <!-- creating popup button -->
+      <button type="start" class="button" onclick="openpopup()">
+        Start Game
+      </button>
+      <div class="start_popup" id="popup">
+        <!-- taking input as name and nick name -->
+        <input
+          type=""
+          class="name"
+          id="name"
+
+          placeholder="                Enter Your Name"
+          required
+        />
+        <input
+          type="text"
+          class="nick_name"
+          id="nickName"
+          placeholder="             Enter Your Nick Name"
+          required
+        />
+        <!-- creating buttons as strat and close -->
+        <div class="in_start_buttons">
+          <button type="button" class="Start" id="start">Start</button>
+          <button type="game" class="Close" onclick="closepopup()">
+            close
+          </button>
+        </div>
+      </div>
+    </div> 
+    <!-- Instrutions -->
+    <p></p>
+    <script>
+      // keeping name and nick name in local storage //
+    const nick = document.getElementById('nickName');
+      const name = document.getElementById('name');
+      console.log(name);
+      localStorage.setItem('name', name);
+      let popup = document.getElementById('popup');
+      function openpopup() {
+        popup.classList.add('open-popup');
+      }
+      function closepopup() {
+        popup.classList.remove('open-popup');
+      }
+      document.getElementById('start').onclick = () => {
+        localStorage.setItem('name',name.value);
+        localStorage.setItem('nick name', nick.value);
+        location.replace('./game.html');
+      };
+
+      console.log()
+    </script>
+  </body>
+</html>

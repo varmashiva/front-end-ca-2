@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game-over</title>
+    <link rel="stylesheet" href="game-over.css">
+</head>
+<body>
+    <!-- creating html page for you lose the game -->
+    <div class="gameover-bg">
+        <!-- creating a sentence -->
+        <div class="lost"><h2>You got eatten by the bug</h2>
+        <!-- creating an image -->
+        <div class="spider_img"><img src="./assets/black-spider-clipart-arachnia-illustration-of-black-spider-free-vector-removebg-preview.png" width="250px"alt=""></div>   
+        <!-- creating try again button -->
+        <h2 class="tag" align="center"></h2>
+        <button class="flex-centered" id="button">Try Again</button>
+    </div>
+    <script>
+
+        // giving a on-click event for try again button //
+        let button=document.getElementById("button")
+        button.addEventListener('click',()=>{
+            window.location.href='./game.html'
+        })
+        let bgmSound = new Audio('./assets/sound.mp3');
+        bgmSound.play();
+        bgmSound.loop = true;
+        bgmSound.volume = 1;
+
+        const tag = document.querySelector('.tag');
+        const tags = [
+        "Better luck next time",
+        "Well try",
+        "Done with work",
+        "Keep at it",
+        "Nice effort",
+        "On to the next",
+        "A good attempt",
+        "Finished the task",
+        "Give it another shot",
+        "Great attempt",
+        "Work completed",
+        "Moving forward",
+        "Well attempted"
+        ];
+  
+  const gameovertags = tags[Math.floor(Math.random() * tags.length)];
+  tag.innerHTML = gameovertags
+    </script>
+</body>
+</html> 
